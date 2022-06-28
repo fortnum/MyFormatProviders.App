@@ -19,6 +19,6 @@ class Program
             ("new object()", new object())
         };
 
-        foreach (var (Name, Value) in arr) { var valueStr = Convert.ToString(Value, new MyFormatProvider()); Console.WriteLine($"{Name} => {valueStr}"); }
+        foreach (var (name, value) in arr) { var valueStr = Convert.ToString(value, new MyFormatProvider()); Console.WriteLine($"{name} => {valueStr}"); }
     }
 }
